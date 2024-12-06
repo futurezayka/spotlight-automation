@@ -53,7 +53,7 @@ class WalletConnect:
     def setup_metamask_wallet(self):
         time.sleep(10)
         self.driver.switch_to.window(self.driver.window_handles[1])
-        WebDriverWait(self.driver, 10).until(
+        WebDriverWait(self.driver, 15).until(
             ec.element_to_be_clickable((By.CSS_SELECTOR, AGREE_METAMASK_PRIVACY_SELECTOR)))
         self.driver.find_element(By.CSS_SELECTOR, AGREE_METAMASK_PRIVACY_SELECTOR).click()
         self.driver.find_element(By.XPATH, IMPORT_METAMASK_WALLET_SELECTOR).click()
@@ -65,7 +65,7 @@ class WalletConnect:
 
         self.driver.find_element(By.XPATH, IMPORT_WALLET_SELECTOR).click()
 
-        WebDriverWait(self.driver, 10).until(ec.visibility_of_all_elements_located((By.TAG_NAME, 'input')))
+        WebDriverWait(self.driver, 15).until(ec.visibility_of_all_elements_located((By.TAG_NAME, 'input')))
 
         inputs = self.driver.find_elements(By.TAG_NAME, 'input')
         inputs[0].send_keys(self.password)
@@ -73,7 +73,7 @@ class WalletConnect:
         inputs[2].click()
 
         self.driver.find_element(By.XPATH, SUBMIT_METAMASK_PASSWORD_SELECTOR).click()
-        WebDriverWait(self.driver, 10).until(ec.presence_of_element_located((By.XPATH, DONE_METAMASK_SELECTOR)))
+        WebDriverWait(self.driver, 15).until(ec.presence_of_element_located((By.XPATH, DONE_METAMASK_SELECTOR)))
         self.driver.find_element(By.XPATH, DONE_METAMASK_SELECTOR).click()
         self.driver.find_element(By.XPATH, NEXT_BUTTON_METAMASK_SELECTOR).click()
         self.driver.find_element(By.XPATH, NEXT_BUTTON_METAMASK_SELECTOR).click()

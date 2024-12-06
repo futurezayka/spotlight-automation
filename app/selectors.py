@@ -17,3 +17,14 @@ APPROVE_SELECTOR = """//*[@id="app-content"]/div/div/div/div[2]/div[3]/button[2]
 SIGN_MESSAGE_SELECTOR = """/html/body/div[3]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[1]"""
 SIGH_IN_CONFIRM_SELECTOR = """//*[@id="app-content"]/div/div/div/div/div[3]/button[2]"""
 IMPORT_WALLET_SELECTOR = '//*[@id="app-content"]/div/div[2]/div/div/div/div[4]/div/button'
+
+TWITTER_SIGN_IN = """//*[@id="allow"]"""
+TWITTER_LOGIN_INPUT_SELECTOR = """//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[4]/label/div/div[2]/div/input"""
+TWITTER_PASSWORD_INPUT_SELECTOR = """//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input"""
+TWITTER_PHONE_INPUT_SELECTOR = """//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input"""
+AUTHORIZE_APP_SELECTOR = """//*[@id="allow"]"""
+
+MINT_BUTTON_SELECTOR = "/html/body/div[1]/div[3]/div/div/div[3]/div[1]/div/div/a"
+INPUT_NAME_SELECTOR = """//*[@id="name"]"""
+INPUT_DESCRIPTION_SELECTOR = """//*[@id="description"]"""
+MINT_NOW_SELECTOR = "/html/body/div[1]/div[3]/div/div[2]/div[4]/button[2]"
